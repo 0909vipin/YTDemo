@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head') %>
+    <title>Signup</title>
+  </head>
+  <body>
+    <%- include('./partials/nav') %>
+
+    <div class="container">
+      <form action="/user/signin" method="POST">
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder=""
+            value="vipin@gmail.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label"
+            >Password</label
+          >
+          <input
+            type="text"
+            name="password"
+            class="form-control"
+            id="password"
+            placeholder=""
+            value="123"
+          />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+    </div>
+
+    <%- include('./partials/script') %>
+  </body>
+</html>
